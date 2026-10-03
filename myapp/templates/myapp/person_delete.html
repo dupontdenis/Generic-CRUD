@@ -1,0 +1,10 @@
+<h1>Supprimer cette personne ?</h1>
+
+<p>{{ object.first_name }} {{ object.last_name }}</p>
+
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Supprimer</button>
+</form>
+
+<a href="/">Annuler</a>
